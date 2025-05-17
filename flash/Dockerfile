@@ -1,5 +1,5 @@
 # Use a lightweight Java runtime
-FROM openjdk:17-jdk-slim
+FROM openjdk:17
 
 # Set working directory
 WORKDIR /app
