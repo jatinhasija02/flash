@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy jar file to container
-COPY target/*.jar app.jar
+COPY flash/target/*.jar app.jar
 
 # Expose the port your app runs on
 EXPOSE 9090
