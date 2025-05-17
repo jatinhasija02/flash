@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: flash-e-commerce  # This matches your application.properties DB name
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db.sql:/docker-entrypoint-initdb.d/db.sql  # Load the dump file during container initialization
+    networks:
+      - my-network
+
+  backend:
+    image: my-backend-app  # Name of your Spring Boot app Docker image
+    container_name: backend-app
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/flash-e-commerce  # Pointing to the MySQL container
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    ports:
+      - "9090:9090"
+    depends_on:
+      - mysql
+    networks:
+      - my-network
+
+volumes:
+  db_data:
+    driver: local
+
+networks:
+  my-network:
+    driver: bridge

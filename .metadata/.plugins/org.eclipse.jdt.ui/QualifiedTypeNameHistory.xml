@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.antlr.v4.runtime.misc.NotNull"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.repository.AdminRepository"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.repository.OrderRepository"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.dao.AdminDao"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.entity.Admin"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.dao.OrderDao"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.entity.Order"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.dao.ProductDao"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.entity.Product"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.dao.ProductOwnerDao"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.repository.ProductOwnerRepository"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.repository.ProductRepository"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.entity.ProductOwner"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.dao.UserDao"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.repository.UserRepository"/>
+    <fullyQualifiedTypeName name="com.ecommerce.flash.entity.User"/>
+</qualifiedTypeNameHistroy>
