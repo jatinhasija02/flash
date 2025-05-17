@@ -11,4 +11,4 @@ COPY flash/target/*.jar app.jar
 EXPOSE 9090
 
 # Run the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "app.jar"]
